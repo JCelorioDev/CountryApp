@@ -1,0 +1,39 @@
+<div class="row mt-4">
+  <div class="col-3 px-3">
+   <!-- Sidebar -->
+   <h2>Países</h2>
+   <hr>
+
+   <div class="list__style">
+    <ul class="list-group">
+      <li style="cursor: pointer;" routerLinkActive="active" routerLink="home" class="list-group-item">
+        Home Page
+      </li>
+ 
+      <li style="cursor: pointer;"  routerLinkActive="active" routerLink="contact" class="list-group-item">
+        About Page
+      </li>
+ 
+      <li style="cursor: pointer;"  routerLinkActive="active" routerLink="about" class="list-group-item">
+        Contact Page
+      </li>
+ 
+      <li routerLinkActive="active" style="cursor: pointer;" class="nav-item dropdown list-group-item">
+       <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false">Queries</a>
+       <ul class="dropdown-menu">
+         <li><a class="dropdown-item" routerLinkActive="active"  routerLink="capital">Capital</a></li>
+         <li><a class="dropdown-item" routerLinkActive="active"  routerLink="countrie">Pais</a></li>
+         <li><a class="dropdown-item" routerLinkActive="active"  routerLink="region">Región</a></li>
+       </ul>
+       </li>
+     
+    </ul>
+   </div>
+
+  </div>
+
+  <div class="col">
+    <router-outlet></router-outlet>
+  </div>
+</div>
+
